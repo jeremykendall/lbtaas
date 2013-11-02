@@ -1,7 +1,7 @@
 # Little Bobby Tables as a Service
 
 Little Bobby Tables as a Service (LBTaaS) was created as an example of `composer create-project`
-for my [Composer](http://getcomposer.org) presentation given at [TechCamp Memphis](http://techcampmemphis.com/)
+for my [Composer presentation](http://www.slideshare.net/jeremykendall/game-changing-dependency-managment) given at [TechCamp Memphis](http://techcampmemphis.com/)
 on Nov 2, 2013.
 
 ## Installation
