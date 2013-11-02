@@ -1,22 +1,20 @@
 {
-    "name": "slim/slim-skeleton",
-    "description": "A Slim Framework skeleton application for rapid development",
-    "keywords": ["microframework","rest","router"],
-    "homepage": "http://github.com/codeguy/Slim-Skeleton",
+    "name": "jeremykendall/lbtaas",
+    "description": "Little Bobby Tables as a Service",
+    "keywords": ["humor", "demonstration"],
+    "homepage": "https://github.com/jeremykendall/lbtaas",
     "license": "MIT",
     "authors": [
         {
-            "name": "Josh Lockhart",
-            "email": "info@joshlockhart.com",
-            "homepage": "http://www.joshlockhart.com/"
+            "name": "Jeremy Kendall",
+            "email": "jeremy@jeremykendall.net",
+            "homepage": "http://about.me/jeremykendall"
         }
     ],
     "require": {
         "php": ">=5.3.0",
         "monolog/monolog": "~1.6",
         "slim/slim": "~2.3",
-        "slim/views": "0.*",
-        "twig/twig": "~1.13",
         "shkm/jsend": "dev-master"
     }
 }
