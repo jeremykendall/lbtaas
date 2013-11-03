@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
+        <title>Little Bobby Tables as a Service (LBTaaS)</title>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.1/css/bootstrap.min.css">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.1/css/bootstrap-theme.min.css">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.1/js/bootstrap.min.js"></script>
+
+        <!-- Custom styles for this template -->
+        <link href="/css/sticky-footer.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <!-- Wrap all page content here -->
+        <div id="wrap">
+            <!-- Begin page content -->
+            <div class="container">
+                <div class="page-header">
+                    <h1>Little Bobby Tables as a Service</h1>
+                </div>
+                <p class="lead">Thanks to Little Bobby Tables as a Service, or LBTaaS, you'll never have to Google "<a href="https://www.google.com/search?q=little+bobby+tables+xkcd+sql+injection+funny&oq=little+bobby+tables+xkcd+sql+injection+funny&aqs=chrome..69i57&sourceid=chrome&espv=210&es_sm=91&ie=UTF-8" target="_blank"><em>little bobby tables xkcd sql injection funny</em></a>" to find your favorite comic strip again!</p>
+
+                <p><img src="http://imgs.xkcd.com/comics/exploits_of_a_mom.png" class="img-thumbnail" /></p>
+
+                <h2>The Problem</h2>
+                <p>Little Bobby Tables, or <a href="http://xkcd.com/327" target="_blank">Exploits of a Mom</a>, is one of the most popular xkcd cartoons of all time. It constantly shows up in blog posts, technical presentations, funny emails to friends, and on printouts thumbtacked to cubicle farm walls in IT shops worldwide. But what happens when you want to share it or use it yourself?  You have to stop and Google the damned thing, and if you Google the wrong terms, you may <em>never</em> find it!</p>
+
+                <h2>The Solution</h2>
+                <p>Finally, there's a solution to the "Googling that xkcd comic what was it called again?" problem.  Enter Little Bobby Tables as a Service, a 100% RESTful, versioned API that makes consuming "Little Bobby Tables" easier than ever!  All you have to do is make an HTTP GET request to <a href="/lbt?version=1">http://lbtaas.jeremykendall.net/lbt?version=1</a>, parse the JSON response body, and ROFL and share and be delighted to your hearts content.</p>
+
+                <h3>Endpoints</h3>
+                <p>LBTaaS likes to keep things simple, so there's just one endpoint.  Make a GET request to <code>/lbt?version=1</code> and, voila!, you have a JSON response body with all the info you need to enjoy "Little Bobby Tables".</p>
+
+                <h3>Response Body</h3>
+                <p>Here's what you can expect when you make your GET request.</p>
+                <pre>
+{
+   "status":"success",
+   "data":{
+      "name":"Exploits of a Mom",
+      "permalink":"http:\/\/xkcd.com\/327\/",
+      "image":"http:\/\/imgs.xkcd.com\/comics\/exploits_of_a_mom.png",
+      "link":"\/lbt?version=1&format=json"
+   }
+}
+            </pre>
+            </div>
+        </div>
+
+        <div id="footer">
+            <div class="container">
+                <p class="text-muted credit">
+                    By <a href="http://about.me/jeremykendall">Jeremy Kendall</a>. Source available on <a href="https://github.com/jeremykendall/lbtaas">GitHub</a>.
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
