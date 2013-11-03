@@ -20,14 +20,14 @@ $app->container->singleton('log', function () {
 // Define routes
 $app->get('/', function () use ($app) {
 
-    $success = new JSendResponse('success', array(
+    $jsend = new JSendResponse('success', array(
         'name' => 'Exploits of a Mom',
         'permalink' => 'http://xkcd.com/327/',
         'image' => 'http://imgs.xkcd.com/comics/exploits_of_a_mom.png',
     ));
 
     $app->response->headers->set('Content-Type', 'application/json');
-    $app->response->setBody($success->encode());
+    $app->response->setBody($jsend->encode());
 
     return $app->response;
 });
