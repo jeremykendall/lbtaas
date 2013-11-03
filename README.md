@@ -8,7 +8,7 @@ given at [TechCamp Memphis](http://techcampmemphis.com/) on Nov 2, 2013.
 
 * Install [Composer](http://getcomposer.org)
 * Run `composer create-project jeremykendall/lbtaas lbtaas`
-* Add `127.0.0.1    lbtaas` to `/etc/hosts`
+* Add `127.0.0.1    lbtaas.dev` to `/etc/hosts`
 * Create a vhost with `DocumentRoot` set to `/path/to/lbtaas/public`
 * Restart apache
 * WIN
