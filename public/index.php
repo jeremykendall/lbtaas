@@ -41,7 +41,6 @@ $app->get('/', function () use ($app) {
 
 // $version and $format aren't currently in use. They're here for future api versioning
 $app->get('/lbt(/:version(/:format))', function ($version = 1, $format = 'json') use ($app) {
-
     $jsend = new JSendResponse('success', array(
         'name' => 'Exploits of a Mom',
         'permalink' => 'http://xkcd.com/327/',
@@ -50,6 +49,7 @@ $app->get('/lbt(/:version(/:format))', function ($version = 1, $format = 'json')
     ));
 
     $app->response->headers->set('Content-Type', 'application/json');
+    $app->response->headers->set('X-LBTaaS-Media-Type', 'lbtaas.v1');
     $app->response->setBody($jsend->encode());
 
     return $app->response;
