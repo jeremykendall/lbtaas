@@ -4,18 +4,7 @@ require '../vendor/autoload.php';
 use JSend\JSendResponse;
 
 // Prepare app
-$app = new \Slim\Slim(array(
-    'templates.path' => '../templates',
-));
-
-// Create monolog logger and store logger in container as singleton
-// (Singleton resources retrieve the same log resource definition each time)
-$app->container->singleton('log', function () {
-    $log = new \Monolog\Logger('slim-skeleton');
-    $log->pushHandler(new \Monolog\Handler\StreamHandler('../logs/app.log', \Psr\Log\LogLevel::DEBUG));
-
-    return $log;
-});
+$app = new \Slim\Slim();
 
 // Define routes
 $app->get('/', function () use ($app) {

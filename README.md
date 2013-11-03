@@ -1,8 +1,8 @@
 # Little Bobby Tables as a Service
 
 Little Bobby Tables as a Service (LBTaaS) was created as an example of `composer create-project`
-for my [Composer presentation](http://www.slideshare.net/jeremykendall/game-changing-dependency-managment) given at [TechCamp Memphis](http://techcampmemphis.com/)
-on Nov 2, 2013.
+for my [Composer presentation](http://www.slideshare.net/jeremykendall/game-changing-dependency-managment)
+given at [TechCamp Memphis](http://techcampmemphis.com/) on Nov 2, 2013.
 
 ## Installation
 
@@ -15,17 +15,16 @@ on Nov 2, 2013.
 
 ## Usage
 
-Visit [http://lbtaas.dev](http://lbtaas.dev).  You should get the below response:
+Visit [http://lbtaas.dev](http://lbtaas.dev). You should receive the following
+JSON response:
 
 ```
-HTTP/1.1 200 OK
-Date: Sat, 02 Nov 2013 20:40:30 GMT
-Server: Apache/2.2.24 (Unix) DAV/2 PHP/5.4.19 mod_ssl/2.2.24 OpenSSL/0.9.8y
-X-Powered-By: PHP/5.4.19
-Content-Length: 159
-Keep-Alive: timeout=5, max=100
-Connection: Keep-Alive
-Content-Type: application/json
-
-{"status":"success","data":{"name":"Exploits of a Mom","permalink":"http:\/\/xkcd.com\/327\/","image":"http:\/\/imgs.xkcd.com\/comics\/exploits_of_a_mom.png"}}
+{
+   "status":"success",
+   "data":{
+      "name":"Exploits of a Mom",
+      "permalink":"http:\/\/xkcd.com\/327\/",
+      "image":"http:\/\/imgs.xkcd.com\/comics\/exploits_of_a_mom.png"
+   }
+}
 ```

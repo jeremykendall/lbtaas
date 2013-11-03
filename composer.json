@@ -1,7 +1,7 @@
 {
     "name": "jeremykendall/lbtaas",
     "description": "Little Bobby Tables as a Service",
-    "keywords": ["humor", "demonstration"],
+    "keywords": ["humor", "demonstration", "xkcd"],
     "homepage": "https://github.com/jeremykendall/lbtaas",
     "license": "MIT",
     "authors": [
@@ -13,7 +13,6 @@
     ],
     "require": {
         "php": ">=5.3.0",
-        "monolog/monolog": "~1.6",
         "slim/slim": "~2.3",
         "shkm/jsend": "dev-master"
     }
