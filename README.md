@@ -15,8 +15,8 @@ given at [TechCamp Memphis](http://techcampmemphis.com/) on Nov 2, 2013.
 
 ## Usage
 
-Visit [http://lbtaas.dev](http://lbtaas.dev). You should receive the following
-JSON response:
+Make a GET request to [http://lbtaas.dev/lbt?version=1](http://lbtaas.dev/lbt?version=1). 
+You should receive the following JSON response:
 
 ```
 {
@@ -24,7 +24,8 @@ JSON response:
    "data":{
       "name":"Exploits of a Mom",
       "permalink":"http:\/\/xkcd.com\/327\/",
-      "image":"http:\/\/imgs.xkcd.com\/comics\/exploits_of_a_mom.png"
+      "image":"http:\/\/imgs.xkcd.com\/comics\/exploits_of_a_mom.png",
+      "link":"\/lbt?version=1&format=json"
    }
 }
 ```
