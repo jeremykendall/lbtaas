@@ -45,6 +45,7 @@ $app->get('/lbt(/:version(/:format))', function ($version = 1, $format = 'json')
         'name' => 'Exploits of a Mom',
         'permalink' => 'http://xkcd.com/327/',
         'image' => 'http://imgs.xkcd.com/comics/exploits_of_a_mom.png',
+        'alt' => 'Her daughter is named Help I\'m trapped in a driver\'s license factory.',
         'link' => $app->request->getPathInfo() . sprintf('?version=%d&format=%s', $version, $format),
     ));
 
