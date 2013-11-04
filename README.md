@@ -29,6 +29,7 @@ You should receive the following JSON response:
       "name":"Exploits of a Mom",
       "permalink":"http:\/\/xkcd.com\/327\/",
       "image":"http:\/\/imgs.xkcd.com\/comics\/exploits_of_a_mom.png",
+      "alt":"Her daughter is named Help I'm trapped in a driver's license factory.",
       "link":"\/lbt?version=1&format=json"
    }
 }
